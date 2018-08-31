@@ -5,6 +5,26 @@
     "tasks": [
         {
             "type": "npm",
+            "label": "npm: build",
+            "script": "build",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "npm",
+            "label": "npm: test",
+            "script": "test",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "npm",
             "label": "npm: dev",
             "script": "dev",
             "isBackground": true,
@@ -38,11 +58,7 @@
                         "endsPattern": "^On Your Network:  https?://(?:\\d{1,3}\\.){3}\\d{1,3}:\\d+$"
                     }
                 }
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            ]
         }
     ]
 }
